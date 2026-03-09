@@ -6,15 +6,34 @@
     margin-bottom: 150px;
     padding-top: 150px;
     padding-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    background-color: #efefef;
+    justify-content: space-evenly;    
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center
+    }
+
 }
 
-@media screen and (min-width:1200) {
+@media screen and (min-width:1200px) {
     
+    .container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-left: 200px;
+    }
+}
+
+/* Background Images */
+
+#pic-con {
+    background-image: url(images/toxic-png.jpg);
+    background-image: url(images/acid-sign.jpg);
+    background-image: url(images/battery-sign.jpg);
 }
